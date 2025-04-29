@@ -29,7 +29,7 @@ class Post(models.Model):
     updated = models.DateTimeField(auto_now=True, verbose_name="Fecha de edición")
  
 
-    # TODO: Define fields here
+
 
     class Meta:
         verbose_name = 'entrada'
