@@ -18,6 +18,3 @@ def contact(request):
     # return HttpResponse("Contacto - Contact Page")
     return render(request, "core/contact.html")
 
-def sample(request):
-    # return HttpResponse("Sample Page")
-    return render(request, "core/sample.html")
