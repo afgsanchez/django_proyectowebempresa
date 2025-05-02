@@ -147,4 +147,8 @@ MEDIA_ROOT = os.path.join(BASE_DIR, 'media')
 #     }
 # }
 
-
+# Email configuration
+EMAIL_HOST = 'sandbox.smtp.mailtrap.io'
+EMAIL_HOST_USER = '50757b51fe4736'
+EMAIL_HOST_PASSWORD = 'cfce3269e7f93a'
+EMAIL_PORT = '2525'
