@@ -13,8 +13,3 @@ def about(request):
 def store(request):
     # return HttpResponse("Visítanos - Store Page")
     return render(request, "core/store.html")
-
-def contact(request):
-    # return HttpResponse("Contacto - Contact Page")
-    return render(request, "core/contact.html")
-
