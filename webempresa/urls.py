@@ -18,6 +18,8 @@ from django.contrib import admin
 from django.urls import path, include
 from django.conf import settings
 
+
+
 urlpatterns = [
     # Paths del core
     path('', include('core.urls')),
@@ -36,3 +38,11 @@ urlpatterns = [
 if settings.DEBUG:
     from django.conf.urls.static import static
     urlpatterns += static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)
+
+# Personalización del admin de Django
+# Cambiamos el título del admin
+admin.site.site_header = "La Cafettiera Admin"
+# Cambiamos el título de la página
+admin.site.site_title = "La Cafettiera"
+# Cambiamos el título del índice
+admin.site.index_title = "Panel de administración"

@@ -62,7 +62,7 @@ ROOT_URLCONF = 'webempresa.urls'
 TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
-        'DIRS': [],
+        'DIRS': [os.path.join(BASE_DIR, 'templates/')],
         'APP_DIRS': True,
         'OPTIONS': {
             'context_processors': [
@@ -124,6 +124,9 @@ USE_TZ = True
 # https://docs.djangoproject.com/en/5.2/howto/static-files/
 
 STATIC_URL = 'static/'
+STATICFILES_DIRS = [
+    os.path.join(BASE_DIR, 'static'),
+]
 
 # Default primary key field type
 # https://docs.djangoproject.com/en/5.2/ref/settings/#default-auto-field
@@ -149,6 +152,6 @@ MEDIA_ROOT = os.path.join(BASE_DIR, 'media')
 
 # Email configuration
 EMAIL_HOST = 'sandbox.smtp.mailtrap.io'
-EMAIL_HOST_USER = '50757b51fe4736'
-EMAIL_HOST_PASSWORD = 'cfce3269e7f93a'
+EMAIL_HOST_USER = 'xxxxxxxxx'
+EMAIL_HOST_PASSWORD = 'xxxxxxxx'
 EMAIL_PORT = '2525'
